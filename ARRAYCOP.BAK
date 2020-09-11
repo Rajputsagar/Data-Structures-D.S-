@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x[10][20],a[10][20],c,b,i,j;
+clrscr();
+printf("enter the rows =");
+scanf("%d",&b);
+printf("enter the column =");
+scanf("%d",&c);
+for(i=0;i<b;i++)
+{
+ for(j=0;j<c;j++)
+ {
+  printf("enter the element =");
+  scanf("%d",&a[i][j]);
+ }
+}
+for(i=0;i<b;i++)
+{
+ for(j=0;j<c;j++)
+ {
+  printf("%d\n",a[i][j]);
+ }
+}
+for(i=0;i<b;i++)
+{
+ for(j=0;j<c;j++)
+ {
+  x[i][j]=a[i][j];
+  printf("x[i][j]=%d\n",x[i][j]);
+ }
+}
+getch();
+}
+
